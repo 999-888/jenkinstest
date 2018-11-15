@@ -1,7 +1,7 @@
  node {
         stage('Build') { 
                 println "Build" 
-                fl = "$(env.WORKSPACE)/test.json"
+                fl = "${env.WORKSPACE}/test.json"
                 fn = readFile fn
                 echo fn
         }
