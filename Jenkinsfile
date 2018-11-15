@@ -1,4 +1,5 @@
-jenkisfile {
+jenkisfile （）Declarative Pipeline）
+pipeline {
     agent any 
     stages {
         stage('Build') { 
