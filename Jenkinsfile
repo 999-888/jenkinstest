@@ -1,7 +1,4 @@
-Jenkisfile （Declarative Pipeline）
-pipeline {
-    agent any 
-    stages {
+ node {
         stage('Build') { 
             steps {
                 println "Build" 
@@ -17,5 +14,5 @@ pipeline {
                 println "Deploy" 
             }
         }
-    }
 }
+
