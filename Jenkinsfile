@@ -2,7 +2,7 @@
         stage('Build') { 
                 println "Build" 
                 fl = "${env.WORKSPACE}/test.json"
-                fn = readFile fn
+                fn = readFile fl
                 echo fn
         }
         stage('Test') { 
