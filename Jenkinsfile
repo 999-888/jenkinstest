@@ -1,4 +1,4 @@
-jenkisfile （Declarative Pipeline）
+Jenkisfile （Declarative Pipeline）
 pipeline {
     agent any 
     stages {
