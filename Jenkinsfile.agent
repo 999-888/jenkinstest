@@ -1,0 +1,20 @@
+pipeline {
+    agent {
+        node {
+            label "master"
+            customWorkspace "${env.JOB_NAME}/${env.BUILD_NUMBER}"
+        }
+    }
+    stages{
+        stage ('build') {
+            steps {
+                sh "pwd"
+            }
+        }
+        stage ('test') {
+            steps {
+                sh "echo ${JAVA_HOME}"
+            }
+        }
+    }
+}
